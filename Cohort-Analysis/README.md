@@ -13,7 +13,7 @@ To use this cohort analysis framework, you need a dataset with the following str
 |-------------------|---------|
 | yyyy-mm-dd        | xxxxxxx |
 
-This table should contain the user's registration date (`ds`) and a unique identifier for each user (`user_id`).
+This table should contain the purchases's date (`ds`) and a unique identifier for each user (`user_id`). The first purchases of users are considered as aquiziation dates.
 
 ## Code
 ### SQL Queries
