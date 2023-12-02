@@ -143,9 +143,6 @@ These steps will help you transform your cohort analysis results into a visually
 
 ![cohort analysis visualization in metabase](https://github.com/mahdinasseri/SQL-Metabase-Codes/blob/main/Cohort-Analysis/Cohort-Analysis-Visualization.jpg)
 
-## Getting Started
-1. Ensure you have a database with the required data.
-2. Execute the provided SQL code against your database.
-3. Import the Metabase visualization files into your Metabase instance.
+---
 
 Feel free to explore, modify, and contribute to enhance the capabilities of this cohort analysis framework.
