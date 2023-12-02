@@ -115,6 +115,7 @@ WHERE
     AND CAST(TRIM(SUBSTRING(CAST(week_ds - cohort_week AS VARCHAR), 1, 2)) AS BIGINT) % 7 = 0
 GROUP BY 1, 2, 3
 ORDER BY 2, 3;
+```
 
 ## Result
 | age_index | cohort_week | age | retention_rate |
