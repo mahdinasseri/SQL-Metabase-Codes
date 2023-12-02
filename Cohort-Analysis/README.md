@@ -128,6 +128,8 @@ ORDER BY 2, 3;
 ## Visualization
 Metabase is used for visualizing cohort analysis results. The visualizations include age index trends, cohort sizes, and retention rates over different weeks. These visual representations make it easy to interpret and communicate the findings of the cohort analysis.
 
+![cohort analysis visualization in metabase](https://github.com/mahdinasseri/SQL-Metabase-Codes/blob/main/Cohort-Analysis/Cohort-Analysis-Visualization.jpg)
+
 ## Getting Started
 1. Ensure you have a database with the required data.
 2. Execute the provided SQL code against your database.
