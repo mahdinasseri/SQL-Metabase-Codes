@@ -125,7 +125,7 @@ ORDER BY 2, 3
 | 14 day    | 2022-01-01  | 14  | 0.6             |
 | ...       | ...         | ... | ...             |
 
-## Visualization
+## Visualization in Metabase
 
 To create a pivot table visualization in Metabase and apply conditional formatting to highlight key insights, follow these steps:
 
