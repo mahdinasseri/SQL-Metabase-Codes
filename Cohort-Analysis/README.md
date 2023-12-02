@@ -126,7 +126,35 @@ ORDER BY 2, 3
 | ...       | ...         | ... | ...             |
 
 ## Visualization
-Metabase is used for visualizing cohort analysis results. The visualizations include age index trends, cohort sizes, and retention rates over different weeks. These visual representations make it easy to interpret and communicate the findings of the cohort analysis.
+
+To create a pivot table visualization in Metabase and apply conditional formatting to highlight key insights, follow these steps:
+
+1. **Select Table in Visualization:**
+   - Choose the "Table" visualization option in Metabase.
+
+2. **Go to Table Options:**
+   - Navigate to the "Table Options" settings.
+
+3. **Turn On Pivot Table Option:**
+   - Enable the "Pivot Table" option to organize your data effectively.
+
+4. **Select Age Index in Pivot Column:**
+   - In the Pivot Table configuration, choose "age_index" as the column for pivoting.
+
+5. **Select Retention Rate in Cell Column:**
+   - Specify "retention_rate" as the column to populate the cells of the pivot table.
+
+6. **Click on Conditional Formatting Tab:**
+   - Access the "Conditional Formatting" tab to enhance visual interpretation.
+
+7. **Click on Add a Rule:**
+   - Add a rule to define conditions for formatting based on specific criteria.
+
+8. **Check Color Range in Formatting Style Section:**
+   - Within the formatting style section, verify the color range settings to ensure a clear representation of varying retention rates.
+
+These steps will help you transform your cohort analysis results into a visually informative and easily interpretable pivot table with color-coded conditional formatting like this:
+
 
 ![cohort analysis visualization in metabase](https://github.com/mahdinasseri/SQL-Metabase-Codes/blob/main/Cohort-Analysis/Cohort-Analysis-Visualization.jpg)
 
