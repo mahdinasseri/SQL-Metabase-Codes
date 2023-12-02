@@ -33,7 +33,7 @@ The final query calculates age, age index, and retention rate, providing a compr
 #### SQL Code
 ```sql
 -- Common Table Expression (CTE) to get the week of year for each date
-WITH week AS (
+WITH week_data AS (
     SELECT
         EXTRACT(year FROM ds) AS year,
         EXTRACT(week FROM ds) AS week,
@@ -43,7 +43,7 @@ WITH week AS (
     GROUP BY 1, 2
 ),
 
--- Extracting relevant data for conversions
+-- Extracting relevant data
 data AS (
     SELECT
         EXTRACT(year FROM ds) AS year,
@@ -61,7 +61,7 @@ events AS (
         user_id
     FROM
         data
-    JOIN week USING (year, week)
+    JOIN week_data USING (year, week)
 ),
 
 -- Creating user cohorts with the earliest week of activity
@@ -114,7 +114,7 @@ WHERE
     week_ds > cohort_week 
     AND CAST(TRIM(SUBSTRING(CAST(week_ds - cohort_week AS VARCHAR), 1, 2)) AS BIGINT) % 7 = 0
 GROUP BY 1, 2, 3
-ORDER BY 2, 3;
+ORDER BY 2, 3
 ```
 
 ## Result
